@@ -197,7 +197,7 @@ int load_config(opts_t *ops) {
 
     // strip \n
     for(c = buf ; *c != '\n' ; c++) ;
-      *c = '\0' ;
+    *c = '\0' ;
 
     key = strtok(buf, "=") ;
     data = strtok(NULL, "=") ;
